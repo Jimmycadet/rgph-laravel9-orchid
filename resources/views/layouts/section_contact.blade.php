@@ -77,7 +77,7 @@
                     </div>
                     <div class="d-flex contact-detail align-items-center mt-3">
                         <div class="icon"  style="background-color: white!important;">
-                            <i data-feather="web" class="fea icon-m-md text-dark me-3"></i>
+                            <i data-feather="globe" class="fea icon-m-md text-dark me-3"></i>
                         </div>
                         <div class="flex-1 content">
                             <h6 class="title fw-bold mb-0">Web</h6>

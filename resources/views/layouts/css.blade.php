@@ -18,7 +18,7 @@
 <link href={{asset('assets/css/rgph.css')}} rel="stylesheet" id="">
 
 
-{{----------------------mode secure--}}
+<!----------------------mode secure-------->
 {{--<!-- favicon -->--}}
 {{--<link rel="shortcut icon" href={{asset('favicon/favicon.ico',true)}}>--}}
 {{--<!-- Bootstrap -->--}}

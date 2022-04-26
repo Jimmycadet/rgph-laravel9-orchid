@@ -21,7 +21,7 @@
     gtag('config', 'G-ENDEYQ1CYE');
 </script>
 
-{{--mode secure--}}
+<!--mode secure--------------------------------------------------------------------->
 {{--<!-- BEGIN: vuexy --------------------------------------------------------------------->--}}
 {{--<!-- BEGIN: Vendor JS-->--}}
 {{--<script src={{asset('assets/js/charts/vendors.min.js',true)}}></script>--}}

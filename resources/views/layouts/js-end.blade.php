@@ -34,7 +34,7 @@
 </script>
 <!--END: vuexy------------------------------------------------------------------->
 
-{{-----mode secure--}}
+<!-----mode secure-->
 {{--<!-- javascript -->--}}
 {{--<script src={{asset('assets/js/bootstrap.bundle.min.js',true)}}></script>--}}
 {{--<!-- SLIDER -->--}}
