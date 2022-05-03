@@ -16,11 +16,9 @@
                         >RGPH <br>Recensement Général de la <br>Population et de l'Habitat</h5>
                     </a>
                     <!-- End Logo container-->
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus finibus faucibus.
-                        Fusce lacus sapien, pretium blandit nulla non, consectetur rutrum orci. Sed pharetra lacinia mi.
-                        Nam nisl odio, pharetra gravida tincidunt at, faucibus ut metus.
-                        In tincidunt, nunc et scelerisque viverra, sem eros rhoncus elit, sit amet lacinia sapien mauris sit amet mauris.
-                        Proin ac vehicula urna. Integer egestas leo eu sem commodo efficitur</p>
+                    <p class="mt-4">Ensemble d’opérations consistant à recueillir, à grouper, à évaluer, à analyser, à
+                        publier et à diffuser des données démographiques, économiques et sociales se rapportant, à un
+                        moment donné, à tous les habitants d’un pays.</p>
                     <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                         <li class="list-inline-item"><a href="https://www.facebook.com/RGPH-Ve-Recensement-106495251751654/?ref=pages_you_manage" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
                         {{--                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>--}}

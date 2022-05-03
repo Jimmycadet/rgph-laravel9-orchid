@@ -9,6 +9,8 @@ use App\Orchid\Screens\Examples\ExampleFieldsScreen;
 use App\Orchid\Screens\Examples\ExampleLayoutsScreen;
 use App\Orchid\Screens\Examples\ExampleScreen;
 use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
+use App\Orchid\Screens\Message\MessageEditScreen;
+use App\Orchid\Screens\Message\MessageListScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
@@ -95,6 +97,38 @@ Route::screen('roles', RoleListScreen::class)
             ->parent('platform.index')
             ->push(__('Roles'), route('platform.systems.roles'));
     });
+
+
+
+// ////////////////////////// Message/////////////////////////////////////////////////////////
+
+// Platform > System > Messages
+Route::screen('messages/{message}/edit', MessageEditScreen::class)
+    ->name('platform.systems.messages.edit')
+    ->breadcrumbs(function (Trail $trail, $message) {
+        return $trail
+            ->parent('platform.systems.messages')
+            ->push(__('Message'), route('platform.systems.messages.edit', $message));
+    });
+
+// Platform > System > Messages > Create
+Route::screen('messages/create', MessageEditScreen::class)
+    ->name('platform.systems.messages.create')
+    ->breadcrumbs(function (Trail $trail) {
+        return $trail
+            ->parent('platform.systems.messages')
+            ->push(__('Create'), route('platform.systems.messages.create'));
+    });
+
+// Platform > System > Messages > Message
+Route::screen('messages', MessageListScreen::class)
+    ->name('platform.systems.messages')
+    ->breadcrumbs(function (Trail $trail) {
+        return $trail
+            ->parent('platform.index')
+            ->push(__('Messages'), route('platform.systems.messages'));
+    });
+////////////////////////////////////////////////////////////////////////////////////////
 
 // Example...
 Route::screen('example', ExampleScreen::class)

@@ -45,6 +45,8 @@ class ContactForm extends Component
         $this->email='';
         $this->subject='';
         $this->comments='';
+        session()->flash('message', 'votre message a été envoyé avec succès.');
+        $this->emit('alert_remove');
 
     }
 

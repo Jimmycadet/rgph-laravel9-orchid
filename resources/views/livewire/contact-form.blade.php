@@ -7,7 +7,7 @@
                 <div class="mb-3">
                     <label class="form-label">Nom <span class="text-danger">*</span></label>
                     <div class="form-icon position-relative">
-                            <i data-feather="user" class="fea icon-sm icons"></i>
+                        <i data-feather="user" class="fea icon-sm icons"></i>
                         <input wire:model.lazy="name" name="name" id="name" type="text" class="form-control ps-5" placeholder="Nom :">
                     </div>
                     @error('name')
@@ -69,9 +69,24 @@
                     <button type="submit" id="submit" name="send" class="btn btn-primary">Envoyer message</button>
                 </div>
             </div><!--end col-->
-{{--            <div class="col-12">--}}
-{{--                {{$comments}}--}}
-{{--            </div><!--end col-->--}}
+            <div wire:loading.delay.shortest  wire:target="name" class="col-12">
+                blablabla blabla
+            </div><!--end col-->
+            <div>
+                @if (session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+            </div>
         </div><!--end row-->
+        <script>
+            $(document).ready(function(){
+                window.livewire.on('alert_remove',()=>{
+                    setTimeout(function(){ $(".alert-success").fadeOut();
+                    }, 3000); // 3 secs
+                });
+            });
+        </script>
     </form>
 </div>
